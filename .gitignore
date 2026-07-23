@@ -1,0 +1,66 @@
+*.nfs*
+*.swp
+*.log
+*a.out
+
+# ignore temp files in example directory
+example/openpiton/test/novas*
+example/openpiton/test/modelsim*
+example/openpiton/test/verdi*
+example/openpiton/test/sim_build
+example/openpiton/test/transcript
+example/openpiton/test/*rc
+example/openpiton/test/*xml
+example/openpiton/test/*vcd
+example/openpiton/test/*fst
+example/openpiton/test/*wlf
+example/openpiton/test/*gtkw
+example/openpiton/test/*.do
+
+# Ignore everything in model directory
+build/*
+!build/.keep
+
+# Ignore Vivado
+.Xil/*
+vivado*.log
+vivado*.str
+
+# Ignore sims logs
+flist
+history.sims
+ucli.key
+
+# Ignore temporary pyv files
+*.v.tmp
+*.h.tmp
+*.tmp.v
+# these are used in the example
+# *.tmp.h
+# *.tmp.sv
+# *.tmp.svh
+
+# Ignore generated .pyc files (specifically for pyhplib)
+*.pyc
+
+# trin ignore some other files
+cscope.*
+tags
+*.bak
+
+vendor/*
+
+bd
+.sv_cache
+verdiLog
+novas.*
+*.fsdb
+
+drops
+reports
+
+# Ignore generated files and directory from Linting tool
+.vcstPref
+Reports/
+WORK/
+vcst_rtdb/
